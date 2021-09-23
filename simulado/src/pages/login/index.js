@@ -1,6 +1,6 @@
 import { Container, InputLogin, ButtonLogin } from "./styled"
 
-import LoadingBar from 'react-top-loading-bar'
+//import LoadingBar from 'react-top-loading-bar'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

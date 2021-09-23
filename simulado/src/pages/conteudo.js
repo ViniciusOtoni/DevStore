@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import LoadingBar from 'react-top-loading-bar'
 
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 
 import Cabecalho  from "./components/cabecalho"
 
