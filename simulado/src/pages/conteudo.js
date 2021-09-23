@@ -27,7 +27,7 @@ const api = new Api();
 
 export default function  ConteudoPrinci() {
     
-    const navegation = useHistory();
+    // const navegation = useHistory();
 
     const [idAlterado, setIdAlterado] = useState(0);
     const [produtos, setProdutos] = useState([]);
@@ -277,7 +277,7 @@ export default function  ConteudoPrinci() {
                         {produtos.map((x, i) => 
 
                             <tr className={i % 2 === 1 ? "int" : ""}>
-                                <td> <img src={x.img_produto} alt="" style={{height:"60px"}} style={{width:"60px"}} /> </td>
+                                <td> <img src={x.img_produto} alt="" style={{height:"60px", width:"60px"}} /> </td>
                                 <td> {x.id_produto} </td>
                                 <td title={x.nm_produto}> 
                                 {x.nm_produto != null && x.nm_produto.length >= 20 

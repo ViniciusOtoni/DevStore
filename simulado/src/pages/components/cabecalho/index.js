@@ -1,5 +1,5 @@
 import { ContainerCabecalho } from "./styled"
-import { useRef } from "react";
+// import { useRef } from "react"; 
 
 import Cookies from "js-cookie";
 import { useState } from "react";
@@ -32,14 +32,15 @@ function lerUsuarioQuelogou(navegation) {
 export  default function Cabecalho() {
     const navegation = useHistory();
     let usuarioLogado = lerUsuarioQuelogou(navegation) || {};
-    const[nm, setNm] = useState(usuarioLogado.nm_usuario);
-    const[img, setImg] = useState(usuarioLogado.img_usuario);
-    const [produtos, setProdutos] = useState([]);
+    const[nm] = useState(usuarioLogado.nm_usuario);
+    const[img] = useState(usuarioLogado.img_usuario);
+    const [setProdutos] = useState([]);
 
     const logof = () => {
         Cookies.remove('usuario-logado')
         navegation.push('/');
     }
+
 
     
     
